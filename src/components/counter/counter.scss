@@ -1,0 +1,22 @@
+.counter {
+  width: 92px;
+  height: 39px;
+  background: #e2e9f0;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 20px;
+  .increment {
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+  }
+  .decrement {
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+  }
+}

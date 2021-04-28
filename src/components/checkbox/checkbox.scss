@@ -1,0 +1,27 @@
+.card-checkboxes {
+  margin-top: 3%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  .checkbox + .checkbox {
+    margin-top: 2.3%;
+  }
+  .checkbox {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .check {
+      all: unset;
+      padding: 2.5%;
+      background: #dedede;
+      border-radius: 5px;
+      &:checked {
+        background: linear-gradient(261.65deg, #efbb37 -3.95%, #cf9e1f 109.44%);
+      }
+    }
+    label {
+      margin-left: 4%;
+    }
+  }
+}
