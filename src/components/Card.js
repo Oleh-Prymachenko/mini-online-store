@@ -12,16 +12,24 @@ const Card = ({ product, productActive }) => {
   const [productSize, setProductSize] = useState(1);
   const [isOnPhoto, setIsOnPhoto] = useState(false);
 
-  const productPhoto = isOnPhoto ? "product-photo:hover" : "product-photo";
   return (
     <div className="card">
       <div className="card-header">
         <button className="btn-new">new</button>
         <img
-          className={productPhoto}
+          className="product-photo"
+          alt="product"
           src={isOnPhoto ? productActive : product}
-          onMouseOver={() => setIsOnPhoto(true)}
-          onMouseOut={() => setIsOnPhoto(false)}
+          onMouseOver={() =>
+            setTimeout(() => {
+              setIsOnPhoto(true);
+            }, 500)
+          }
+          onMouseOut={() =>
+            setTimeout(() => {
+              setIsOnPhoto(false);
+            }, 500)
+          }
         />
         <Badge />
       </div>

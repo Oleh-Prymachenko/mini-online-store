@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Card from "./components/Card";
 import "./App.scss";
+
 import product1 from "./assets/images/product-1.png";
 import product2 from "./assets/images/product-2.png";
 import product3 from "./assets/images/product-3.png";
-
 import product1Active from "./assets/images/product-1-active.png";
 import product2Active from "./assets/images/product-2-active.png";
 import product3Active from "./assets/images/product-3-active.png";

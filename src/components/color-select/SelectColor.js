@@ -13,21 +13,23 @@ const options = [
   "красный",
   "зеленный",
 ];
-export const SelectColor = ({}) => {
+export const SelectColor = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
   const onOptionClicked = (value) => {
     setSelectedOption(value);
     setIsOpen(false);
+    console.log(selectedOption);
   };
 
   return (
     <div className="dropdown-container">
       <div className="dropdown-header">
-        <span>Цвет</span>
+        <span>{selectedOption || "Цвет"}</span>
         <img
           src={arrow}
+          alt="arrow"
           onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
         />
       </div>
